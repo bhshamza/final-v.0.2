@@ -44,8 +44,8 @@ process.on('unhandledRejection', err => {
 
 
 //setting for deployement 
-if(process.env.NODE_ENV === 'DEVELOPMENT'){
+
 app.use(express.static(path.join (__dirname , 'frontend1' , 'build' )))
 app.get('*',(req,res)=>{
     res.sendFile(path.join(__dirname,'frontend1','build','index.html'))
-})}
+})
