@@ -1,1 +1,1 @@
-web: node shopit/server.js
+web: node server.js
