@@ -1,4 +1,5 @@
 const express =require ('express')
+const port = process.env.PORT || 4000
 
 const app = require('./app')
 const connectDatabase = require('./config/database')
@@ -28,8 +29,8 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
-const server = app.listen(process.env.PORT || 4000, () => {
-    console.log(`Server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode.`)
+const server = app.listen(port, () => {
+    console.log(`Server started on PORT: ${port} in ${process.env.NODE_ENV} mode.`)
 })
 
 // Handle Unhandled Promise rejections
