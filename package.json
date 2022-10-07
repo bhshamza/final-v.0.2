@@ -15,9 +15,9 @@
     "prod": "SET NODE_ENV=PRODUCTION& nodemon server",
     "seeder": "node utils/seeder.js",
     "heroku-postbuild": "npm i --prefix frontend1 npm run build --prefix frontend1",
-    " heroku ps": "scale worker=0",
+    "heroku ps": "scale worker=0"
    
-    "heroku ps":"scale web=1"
+   
   },
   "author": "Ghulam Abbas",
   "license": "ISC",
